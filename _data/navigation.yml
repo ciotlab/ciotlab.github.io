@@ -13,16 +13,16 @@ main_menu:
         url: "/professor"
 
       - text: "PhD"
-        url: "/people4#Phd"
+        url: "/people#Phd"
 
       - text: "Master"
-        url: "/people4#Master"
+        url: "/people#Master"
 
       - text: "Undergraduate"
-        url: "/people4#Undergraduate"
+        url: "/people#Undergraduate"
       
       - text: "Alumni"
-        url: "/people4#Alumni"
+        url: "/people#Alumni"
 
   - text: "RESEARCH"
     url: "/research"

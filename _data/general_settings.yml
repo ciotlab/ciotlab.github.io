@@ -14,10 +14,6 @@ address_01: '경기도 수원시 장안구 천천동 서부로 2066 제1공학�
 phone_number: "+82) 31-290-7693"
 copyright_text: "© 2023 CIOT. All rights reserved."
 
-google_analytics:
-  enable: false
-  key: "UA-664136761-1"  # UA-664136761-1
-
 google_map: |
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d897.1455177161669!2d126.97584833128856!3d37.29365376905755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b42c9f70b3949%3A0x82d81ea4e191df39!2z7ISx6reg6rSA64yA7ZWZ6rWQIOygnDHqs7XtlZnqtIAgKOyekOyXsOqzvO2Vmey6oO2NvOyKpCk!5e0!3m2!1sko!2skr!4v1675086060262!5m2!1sko!2skr" style="width:100%; height: 100%; border:0" allowfullscreen=""></iframe>
 
@@ -26,7 +22,6 @@ social_accounts:
   links:
     - url: "https://www.youtube.com/@kaewonchoi/videos"
       icon: "jam jam-youtube"
-
 
 external_links:
   title: "More"
@@ -41,68 +36,3 @@ external_links:
       text: "Publication"
     - url: "/gallery"
       text: "Gallery"
-
-
-external_links_02:
-  title: "Need Help?"
-  links:
-    - url: "#"
-      text: "Support"
-    - url: "#"
-      text: "Get Started"
-    - url: "#"
-      text: "Contact Us"
-    - url: "#"
-      text: "Terms of Use"
-    - url: "#"
-      text: "Privacy Policy"
-
-
-external_links_03:
-  title: "Company"
-  links:
-    - url: "#"
-      text: "Our Team"
-    - url: "#"
-      text: "Strategy"
-    - url: "#"
-      text: "Service"
-    - url: "#"
-      text: "Mission"
-    - url: "#"
-      text: "Process"
-
-footer_newsletter:
-  title: "Our Newsletter"
-  sub_title: "Subscribe to our newsletter to get our news & deals delivered to your inbox!"
-  subscribe_button_text: "Join"
-
-
-one_page_nav_settings:
-  links:
-    - text: "Home"
-      url: "#home"
-    - text: "Services"
-      url: "#services"
-    - text: "Experiences"
-      url: "#experiences"
-    - text: "Portfolio"
-      url: "#portfolio"
-    - text: "Testimonials"
-      url: "#testimonials"
-    - text: "Contact"
-      url: "#contact"
-
-author_page_header:
-  header_background_image: "/assets/images/art/bg31.jpg"
-
-gallery:
-  images:
-  - img: "/assets/images/art/z1.svg"
-  - img: "/assets/images/art/z2.svg"
-  - img: "/assets/images/art/z3.svg"
-  - img: "/assets/images/art/z4.svg"
-  - img: "/assets/images/art/z5.svg"
-  - img: "/assets/images/art/z6.svg"
-  - img: "/assets/images/art/z7.svg"
-  - img: "/assets/images/art/z8.svg"
