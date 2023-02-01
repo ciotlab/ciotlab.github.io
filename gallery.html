@@ -22,7 +22,7 @@ header_image: "/assets/images/art/bg/skku/skku2-2.jpg"
             <div class="tiles">
                 <div class="row isotope light-gallery-wrapper">
                     {% for portfolio in site.data.gallery.portfolios_area.portfolios %}
-                    <div id="portfolio.title" class="item grid-sizer col-md-6 col-lg-12 {% for filter in portfolio.filters %} {{filter}} {% endfor %}">
+                    <div id="{{portfolio.title}}" class="item grid-sizer col-md-6 col-lg-12 {% for filter in portfolio.filters %} {{filter}} {% endfor %}">
                         <div class="box bg-white shadow">
                             <div class="post-content">
                                 <div class="category text-center">

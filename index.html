@@ -2,121 +2,332 @@
 layout: default
 title: CIOT
 custom_font: font4
-newsletter:
-    enabled: true
-    title: "대학원생을 모집합니다."
-    sub_title: "kaewonchoi@skku.edu"
+header:
+  title: "Convergence IoT System Lab"
+  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacus sapien, fermentum sit amet risus non, ultricies tristique sapien. Phasellus ut sapien nec mauris varius bibendum dictum ultrices nibh."
+  button: "Contact"
 
+newsletter:
+  enabled: false
+  title: "대학원생을 모집합니다."
+  sub_title: "kaewonchoi@skku.edu"
 ---
 
-    <div class="container">
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      {% include header_lab.html extra_class="transparent navbar-hover-opacity
+      nav-uppercase" logo_class="logo" container_class="container" %}
+    </div>
+  </div>
+</div>
+
+{% if page.newsletter.enabled %}
+<div
+  class="modal fade modal-popup"
+  id="modal-06"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="modal-06"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+    <div class="modal-content">
+      <button
+        type="button"
+        class="close"
+        data-dismiss="modal"
+        aria-label="Close"
+      >
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="box bg-white p-40 text-center">
         <div class="row">
-            <div class="col-md-12">
-                {% include header_lab.html extra_class="transparent navbar-hover-opacity nav-uppercase" logo_class="logo" container_class="container" %}
-            </div>
-        </div>
-    </div>
-
-    {% if page.newslettter.enabled %}
-    <div class="modal fade modal-popup" id="modal-06" tabindex="-1" role="dialog" aria-labelledby="modal-06" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
-        <div class="modal-content">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-          <div class="box bg-white p-40 text-center">
-            <div class="row">
-              {% if page.newslettter.image %}
-              <div class="col-md-8 offset-md-2">
-                <figure class="mb-30">
-                  <img src="{{page.newslettter.image}}"  alt="{{page.newslettter.image}}"/>
-                </figure>
-              </div>
-              <!-- /column -->
-              {% endif %}
-            </div>
-            <!-- /.row -->
-            {% if page.newslettter.title %}
-             <h3>{{page.newslettter.title}}</h3>
-            {% endif %}
-            {% if page.newslettter.sub_title %}
-             <p>{{page.newslettter.sub_title}}</p>
-            {% endif %}
-            
+          {% if page.newsletter.image %}
+          <div class="col-md-8 offset-md-2">
+            <figure class="mb-30">
+              <img
+                src="{{page.newslettter.image}}"
+                alt="{{page.newslettter.image}}"
+              />
+            </figure>
           </div>
-          <!--/.box -->
+          <!-- /column -->
+          {% endif %}
         </div>
-        <!--/.modal-content -->
+        <!-- /.row -->
+        {% if page.newsletter.title %}
+        <h3>{{page.newsletter.title}}</h3>
+        {% endif %} {% if page.newsletter.sub_title %}
+        <p>{{page.newsletter.sub_title}}</p>
+        {% endif %}
       </div>
-      <!--/.modal-dialog -->
+      <!--/.box -->
     </div>
-    <!--/.modal -->
-    {% endif %}
+    <!--/.modal-content -->
+  </div>
+  <!--/.modal-dialog -->
+</div>
+<!--/.modal -->
+{% endif %}
 
-    <!-- main header -->
-    <div class="wrapper image-wrapper bg-image inverse-text" data-image-src="/assets/images/art/bg/main.jpg">
-        <div class="container inner pb-120">
-            <div class="space100"></div>
-            <div class="row">
-                <div class="col-lg-7 col-xl-7">
-                    <h1 class="display-1" data-aos="fade-up" data-aos-delay="800">Convergence IoT System Lab</h1>
-                    <div class="space10"></div>
-                    <p class="lead larger" data-aos="fade-up" data-aos-delay="1300"> </p>
-                    <div class="space25"></div>
-                    <div class="d-inline-block" data-aos="fade-up" data-aos-delay="1800">
-                      <a href="/contact.html" class="btn btn-l btn-white btn-strong-hover btn-icon btn-icon-left mr-10">
-                        Contact
-                      </a>
-                    </div>
-                </div>
-            </div>
-            <div class="space100"></div>
+<!-- main header -->
+<div
+  class="wrapper image-wrapper bg-image inverse-text"
+  data-image-src="/assets/images/art/bg/main.jpg"
+>
+  <div class="container inner pb-120">
+    <div class="space100"></div>
+    <div class="row">
+      <div class="col-lg-7 col-xl-7">
+        <h1 class="display-1" data-aos="fade-up" data-aos-delay="300">
+          {{page.header.title}}
+        </h1>
+        <div class="space10"></div>
+        <p class="lead larger" data-aos="fade-up" data-aos-delay="500">
+          {{page.header.content}}
+        </p>
+        <div class="space25"></div>
+        <div class="d-inline-block" data-aos="fade-up" data-aos-delay="700">
+          <a
+            href="/contact"
+            class="btn btn-l btn-white btn-strong-hover btn-icon btn-icon-left mr-10"
+          >
+            {{page.header.button}}
+          </a>
         </div>
-        <div class="divider"><svg xmlns="http://www.w3.org/2000/svg" class="fill-light-wrapper" preserveAspectRatio="none" viewBox="0 0 1070 52">
-            <path d="M0,52V0S247,91,505,32c261.17-59.72,565-13,565-13V52Z" /></svg></div>
+      </div>
     </div>
-    <div class="wrapper overflow-top bleed-l pointer-none d-none d-lg-block">
-        <div class="container text-right">
-          <div class="row" data-aos="fade-up" data-aos-delay="2100">
-            <div class="col-lg-4 offset-lg-8 col-xl-4 offset-xl-8">
-              <figure style="width: 25rem; margin-top: 10rem;">
-                <img src="/assets/images/art/bg/iso_Inten51.png" alt=""/>
-              </figure>
+    <div class="space100"></div>
+  </div>
+  <div class="divider">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="fill-light-wrapper"
+      preserveAspectRatio="none"
+      viewBox="0 0 1070 52"
+    >
+      <path d="M0,52V0S247,91,505,32c261.17-59.72,565-13,565-13V52Z" />
+    </svg>
+  </div>
+</div>
+<div class="wrapper overflow-top bleed-l pointer-none d-none d-lg-block">
+  <div class="container text-right">
+    <div class="row" data-aos="fade-up" data-aos-delay="1100">
+      <div class="col-lg-4 offset-lg-8 col-xl-4 offset-xl-8">
+        <figure style="width: 25rem; margin-top: 10rem">
+          <img src="/assets/images/art/bg/iso_Inten51.png" alt="" />
+        </figure>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="space40"></div>
+<!-- projects -->
+<div class="wrapper light-wrapper">
+  <div class="container inner">
+    <h1 class="display-1 ml-10" data-aos="fade-up" data-aos-delay="300">
+      Current Project
+    </h1>
+    <div class="space20"></div>
+    <div
+      class="grid-view boxed light-gallery-wrapper"
+      data-aos="fade-up"
+      data-aos-delay="600"
+    >
+      <div
+        class="carousel owl-carousel gap-small"
+        data-margin="0"
+        data-dots="true"
+        data-loop="true"
+        data-autoplay="true"
+        data-autoplay-timeout="3000"
+        data-responsive='{"0":{"items": "1"}, "768":{"items": "2"}, "992":{"items": "3"}}'
+      >
+        {% for project in site.data.project.current_project %}
+        <div class="item">
+          <div class="item-inner">
+            <div class="box bg-white shadow p-30" style="height: 12rem">
+              <div class="post-content align-items-center">
+                <h2
+                  class="post-title mb-10"
+                  style="
+                    overflow: hidden;
+                    word-break: break-word;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                  "
+                >
+                  <a href="/project">{{project.title}}</a>
+                </h2>
+                <div class="meta mb-0">{{project.years}}</div>
+                <div class="space20"></div>
+                <div class="row">
+                  <div class="col-sm-6 col-lg-9">
+                    <div
+                      class="title-bg bg-hibiscus color-dark text-capitalize text-center"
+                      style="font-size: 0.8rem; font-weight: bold"
+                    >
+                      {{project.institution}}
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+        {% endfor %}
+      </div>
     </div>
+  </div>
+  <div class="space60"></div>
+  <div class="divider">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="fill-gray-wrapper"
+      preserveAspectRatio="none"
+      viewBox="0 0 1070 56.98"
+    >
+      <path
+        d="M0,2S140.54-7.76,299,16c247,37,483-3,590-4,104-1,181,14,181,14V57H0Z"
+      />
+    </svg>
+  </div>
+</div>
 
-
-<div class="space60"></div>
+<!-- research -->
+<div class="wrapper gray-wrapper">
+  <div class="container inner">
+    <h1 class="display-1 ml-10" data-aos="fade-up" data-aos-delay="300">
+      Research Area
+    </h1>
+    <div class="space20"></div>
+    <div class="grid-view boxed light-gallery-wrapper">
+      <div class="row">
+        {% for research in site.data.research.research_area %}
+        <div class="item col-md-4" data-aos="fade-up" data-aos-delay="400">
+          <div class="space30"></div>
+          <div class="box bg-white shadow p-30" style="height: 20rem">
+            <div class="post-content align-item-center">
+              <figure
+                class="main overlay rounded mb-30"
+                style="height: 12rem; overflow: hidden"
+              >
+                <img
+                  src="{{ research.main_images[0].img }}"
+                  alt=""
+                  style="
+                    position: absolute;
+                    width: 100%;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                  "
+                />
+              </figure>
+              <h2
+                class="post-title mb-10"
+                style="
+                  overflow: hidden;
+                  word-break: break-word;
+                  text-overflow: ellipsis;
+                  display: -webkit-box;
+                  -webkit-line-clamp: 3;
+                  -webkit-box-orient: vertical;
+                "
+              >
+                <a href="/research#{{research.title}}">{{research.title}}</a>
+              </h2>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  <div class="divider">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="fill-default"
+      preserveAspectRatio="none"
+      viewBox="0 0 1070 53.23"
+    >
+      <path d="M0,11.23s114,42,335,22,272-44,416-28,319,37,319,37v11H0Z" />
+    </svg>
+  </div>
+</div>
 
 <!-- gallery -->
-<div class="wrapper light-wrapper">
-    <div class="container inner">
-        <h1 class="display-1 ml-10">
-            Gallery
-        </h1>
-        <div class="space20"></div>
-        <div class="grid-view boxed light-gallery-wrapper text-center">
-            <div class="grid-view boxed light-gallery-wrapper text-center">
-                <div class="carousel owl-carousel gap-small" data-margin="0" data-dots="true" data-autoplay="false" data-autoplay-timeout="5000" data-responsive='{"0":{"items": "1"}, "768":{"items": "2"}, "992":{"items": "3"}}'>
-                    {% for portfolio in site.data.gallery.portfolios_area.portfolios %}
-                    <div class="item" >
-                        <div class="item-inner">
-                            <div class="box bg-white shadow p-30" style="height: 20rem;">
-                                <figure class="main overlay overlay2 rounded mb-30" style="height:12rem; object-fit: cover;"> 
-                                    <img src="{{ portfolio.images[0].img }}" alt="" >
-                                </figure>
-                                <div class="post-content align-items-center">
-                                    <h2 class="post-title mb-10"><a href="/gallery">{{portfolio.title}}</a></h2>
-                                    <div class="meta mb-0">{{portfolio.date}}</div>
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
-                    {% endfor %}
-                </div>
+<div class="wrapper bg-default">
+  <div class="container inner">
+    <h1
+      class="display-1 ml-10 color-white"
+      data-aos="fade-up"
+      data-aos-delay="300"
+    >
+      Gallery
+    </h1>
+    <div class="space20"></div>
+    <div
+      class="grid-view boxed light-gallery-wrapper text-center"
+      data-aos="fade-up"
+      data-aos-delay="400"
+    >
+      <div
+        class="carousel owl-carousel gap-small"
+        data-margin="0"
+        data-dots="true"
+        data-autoplay="false"
+        data-autoplay-timeout="5000"
+        data-responsive='{"0":{"items": "1"}, "768":{"items": "2"}, "992":{"items": "3"}}'
+      >
+        {% for portfolio in site.data.gallery.portfolios_area.portfolios %}
+        <div class="item">
+          <div class="item-inner">
+            <div class="box bg-white shadow p-30" style="height: 20rem">
+              <figure
+                class="main overlay rounded mb-30"
+                style="height: 12rem; object-fit: cover"
+              >
+                <img src="{{ portfolio.images[0].img }}" alt="" />
+              </figure>
+              <div class="post-content align-items-center">
+                <h2
+                  class="post-title mb-10"
+                  style="
+                    overflow: hidden;
+                    word-break: break-word;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                  "
+                >
+                  <a href="/gallery#{{portfolio.title}}">{{portfolio.title}}</a>
+                </h2>
+                <div class="meta mb-0">{{portfolio.date}}</div>
+              </div>
             </div>
+          </div>
         </div>
+        {% endfor %}
+      </div>
     </div>
+  </div>
+  <div class="space60"></div>
+  <div class="divider">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="fill-footer-dark-wrapper"
+      preserveAspectRatio="none"
+      viewBox="0 0 1070 53.23"
+    >
+      <path d="M0,11.23s114,42,335,22,272-44,416-28,319,37,319,37v11H0Z" />
+    </svg>
+  </div>
 </div>
+
+{% include footer_lab.html light_logo="true" %}
