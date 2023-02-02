@@ -2,91 +2,116 @@
 layout: page
 title: "Testbed Video"
 black_menu: true
-header_style: 'one'
+header_style: "one"
 custom_font: font4
 header_image: "/assets/images/art/bg/skku/skku2-2.jpg"
 ---
 
 <div class="wrapper light-wrapper">
-    <div class="container inner">
-        <div class="grid grid-view boxed">
-            <div class="isotope-filter text-center">
-                <ul>
-                    <li><a class="button active" data-filter="*">All</a></li>
-                    {% for category in site.data.video.categories %}
-                    <li><a class="button" data-filter=".{{category.filter}}">{{category.title}}</a></li>
-                    {% endfor %}
-                </ul>
-            </div>
-            <div class="clearfix"></div>
-            <div class="tiles">
-                <div class="row isotope light-gallery-wrapper">
-                {% for item in site.data.video.research_video %}
-                <div class="item grid-sizer col-md-6 col-lg-12 {% for filter in item.filters %} {{filter}} {% endfor %}">
-                    <div class="box bg-white shadow">
-                        <h1 class="display-2 text-center">
-                        {{item.title}}
-                        </h1>
-                        <div class="space20"></div>
-                        <div class="flex-row text-center">
-                            {% for filter in item.filters %}
-                            <div class="badge badge-pill bg-hibiscus mr-2">
-                                {{filter}}
-                            </div>
-                            {% endfor %}
-                        </div>
-                        <div class="space20"></div>
-                        {% if item.content %}
-                        <div class="space20"></div>
-                        <p class="text-center" style="font-size:1.0rem">{{item.content}}</p>
-                        <div class="space20"></div>
-                        {% endif %}
-                        {% if item.thumbnails %}
-                            <div class="space40"></div>
-                            {% for thumbnail in item.thumbnails %}
-                            {% if forloop.length == 1 %}
-                            <div class="col-md-12 col-lg-12">
-                                <figure class="rounded text-center cover shadow">
-                                    <img src="{{thumbnail.img}}" alt="">
-                                </figure>
-                            </div>
-                            {% else %}
-                            <div class="col-md-12 col-lg-6">
-                                <figure class="rounded text-center shadow cover">
-                                    <img src="{{thumbnail.img}}" alt="">
-                                </figure>
-                            </div>
-                            {% endif %}
-                            {% endfor %}
-                            <div class="space40"></div>
-                        {% endif %}
-                        
-                        <div class="row">
-                            <div class="space40"></div>
-                            {% for video in item.videos %}
-                                <div class="col-md-12 col-lg-12">
-                                    {% if video.sub_title %}
-                                    <h2 class="color-default"><i class="jam jam-circle-f mr-2" style="font-size:0.1rem; vertical-align: middle;"></i>{{video.sub_title}}</h2>
-                                    <div class="space20"></div>
-                                    {% endif %}
-                                    <div style="width:100%; padding-bottom:56.25%; position: relative;">
-                                        <iframe style="width:100%; height:100%; position: absolute;" src="https://www.youtube.com/embed/{{video.link}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                                    </div>
-                                    {% if video.sub_content %}
-                                    <div class="space20"></div>
-                                    <p class="text-center" style="font-size:1.0rem">{{video.sub_content}}</p>
-                                    <div class="space40"></div>
-                                    {% endif %}
-                                    <div class="space40"></div>
-                                </div>
-                            {% endfor %}
-                        </div>
-                    </div>
-                </div>
-                
+  <div class="container inner">
+    <div class="grid grid-view boxed" data-aos="fade-up" data-aos-delay="200">
+      <div class="isotope-filter text-center">
+        <ul>
+          <li><a class="button active" data-filter="*">All</a></li>
+          {% for category in site.data.video.categories %}
+          <li>
+            <a class="button" data-filter=".{{category.filter}}"
+              >{{category.title}}</a
+            >
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="clearfix"></div>
+      <div class="tiles">
+        <div class="row isotope light-gallery-wrapper">
+          {% for item in site.data.video.research_video %}
+          <div
+            class="item grid-sizer col-md-6 col-lg-12 {% for filter in item.filters %} {{filter}} {% endfor %}"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="box bg-white shadow">
+              <h1 class="display-2 text-center">{{item.title}}</h1>
+              <div class="space20"></div>
+              <div class="flex-row text-center">
+                {% for filter in item.filters %}
+                <div class="badge badge-pill bg-hibiscus mr-2">{{filter}}</div>
                 {% endfor %}
+              </div>
+              <div class="space20"></div>
+              {% if item.content %}
+              <div class="space20"></div>
+              <p class="text-center" style="font-size: 1rem">
+                {{item.content}}
+              </p>
+              <div class="space20"></div>
+              {% endif %} {% if item.thumbnails %}
+              <div class="space40"></div>
+              {% for thumbnail in item.thumbnails %} {% if forloop.length == 1
+              %}
+              <div class="col-md-12 col-lg-12">
+                <figure class="rounded text-center cover shadow">
+                  <img src="{{thumbnail.img}}" alt="" />
+                </figure>
+              </div>
+              {% else %}
+              <div class="col-md-12 col-lg-6">
+                <figure class="rounded text-center shadow cover">
+                  <img src="{{thumbnail.img}}" alt="" />
+                </figure>
+              </div>
+              {% endif %} {% endfor %}
+              <div class="space40"></div>
+              {% endif %}
+
+              <div class="row">
+                <div class="space40"></div>
+                {% for video in item.videos %}
+                <div class="col-md-12 col-lg-12">
+                  {% if video.sub_title %}
+                  <h2 class="color-default">
+                    <i
+                      class="jam jam-circle-f mr-2"
+                      style="font-size: 0.1rem; vertical-align: middle"
+                    ></i
+                    >{{video.sub_title}}
+                  </h2>
+                  <div class="space20"></div>
+                  {% endif %}
+                  <div
+                    style="
+                      width: 100%;
+                      padding-bottom: 56.25%;
+                      position: relative;
+                    "
+                  >
+                    <iframe
+                      style="width: 100%; height: 100%; position: absolute"
+                      src="https://www.youtube.com/embed/{{video.link}}"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                  {% if video.sub_content %}
+                  <div class="space20"></div>
+                  <p class="text-center" style="font-size: 1rem">
+                    {{video.sub_content}}
+                  </p>
+                  <div class="space40"></div>
+                  {% endif %}
+                  <div class="space40"></div>
                 </div>
+                {% endfor %}
+              </div>
             </div>
+          </div>
+
+          {% endfor %}
         </div>
+      </div>
     </div>
+  </div>
 </div>

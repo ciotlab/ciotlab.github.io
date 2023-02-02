@@ -2,63 +2,114 @@
 layout: page
 title: "Project"
 black_menu: true
-header_style: 'one'
+header_style: "one"
 custom_font: font4
 header_image: "/assets/images/art/bg/skku/skku2-2.jpg"
 ---
 
 <section id="current">
-<div class="wrapper gray-wrapper">
+  <div class="wrapper gray-wrapper">
     <div class="container inner">
-        <h1 class="display-2 text-center">Current Project</h1>
-        <div class="row align-items-center">
-            {% for project in site.data.project.current_project %}
-            <div class="space60"></div>
-            <div class="col-lg-12 col-sm-12">
-                <div class="box bg-white shadow">
-                    <div class="space20"></div>
-                    <div class="badge badge-pill bg-hibiscus mr-2" style="font-size:0.8rem;">Project {{forloop.index}}</div>
-        
-                    <div class="space20"></div>
-                    <div class="display-4" style="font-weight: bold;">{{project.title}}</div>
-                    <div class="space20"></div>
-                    <div class="flex-row">
-                        <div class="title-bg bg-default color-dark text-center mr-2" style="font-size:0.8rem; font-weight:bold;">{{project.years}}</div>
-                        <div class="title-bg bg-hibiscus color-dark text-center text-capitalize" style="font-size:0.8rem; font-weight:bold;">{{project.institution}}</div>
-                    </div>
-                    <div class="space40"></div>
-                </div>
+      <h1 class="display-2 text-center" data-aos="fade-up" data-aos-delay="200">
+        Current Project
+      </h1>
+      <div
+        class="row align-items-center"
+        data-aos="fade-up"
+        data-aos-delay="400"
+      >
+        {% for project in site.data.project.current_project %}
+        <div class="space60"></div>
+        <div class="col-lg-12 col-sm-12">
+          <div class="box bg-white shadow">
+            <div class="space20"></div>
+            <div
+              class="badge badge-pill bg-hibiscus mr-2"
+              style="font-size: 0.8rem"
+            >
+              Project {{forloop.index}}
             </div>
-            {% endfor %}
+
+            <div class="space20"></div>
+            <div class="display-4" style="font-weight: bold">
+              {{project.title}}
+            </div>
+            <div class="space20"></div>
+            <div class="flex-row">
+              <div
+                class="title-bg bg-default color-dark text-center mr-2"
+                style="font-size: 0.8rem; font-weight: bold"
+              >
+                {{project.years}}
+              </div>
+              <div
+                class="title-bg bg-hibiscus color-dark text-center text-capitalize"
+                style="font-size: 0.8rem; font-weight: bold"
+              >
+                {{project.institution}}
+              </div>
+            </div>
+            <div class="space40"></div>
+          </div>
         </div>
+        {% endfor %}
+      </div>
     </div>
-</div>
+  </div>
 </section>
 
 <section id="past">
-    <div class="wrapper dark-wrapper">
-        <div class="container inner">
-            <h1 class="display-2 text-center" style="color:white;">Past Project</h1>
-            <div class="row align-items-center">
-                {% for project in site.data.project.past_project %}
-                <div class="space60"></div>
-                <div class="col-lg-12 col-sm-12">
-                    <div class="box bg-white shadow">
-                        <div class="space20"></div>
-                        <div class="badge badge-pill bg-gray mr-2" style="font-size:0.8rem;">Project {{forloop.index}}</div>
-            
-                        <div class="space20"></div>
-                        <div class="display-4" style="font-weight: bold;">{{project.title}}</div>
-                        <div class="space20"></div>
-                        <div class="flex-row">
-                            <div class="title-bg bg-default color-dark text-center mr-2 mt-2" style="font-size:0.8rem; font-weight:bold;">{{project.years}}</div>
-                            <div class="title-bg bg-hibiscus color-dark text-center text-capitalize mt-2" style="font-size:0.8rem; font-weight:bold;">{{project.institution}}</div>
-                        </div>
-                        <div class="space40"></div>
-                    </div>
-                </div>
-                {% endfor %}
+  <div class="wrapper dark-wrapper">
+    <div class="container inner">
+      <h1
+        class="display-2 text-center"
+        style="color: white"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
+        Past Project
+      </h1>
+      <div
+        class="row align-items-center"
+        data-aos="fade-up"
+        data-aos-delay="400"
+      >
+        {% for project in site.data.project.past_project %}
+        <div class="space60"></div>
+        <div class="col-lg-12 col-sm-12">
+          <div class="box bg-white shadow">
+            <div class="space20"></div>
+            <div
+              class="badge badge-pill bg-gray mr-2"
+              style="font-size: 0.8rem"
+            >
+              Project {{forloop.index}}
             </div>
+
+            <div class="space20"></div>
+            <div class="display-4" style="font-weight: bold">
+              {{project.title}}
+            </div>
+            <div class="space20"></div>
+            <div class="flex-row">
+              <div
+                class="title-bg bg-default color-dark text-center mr-2 mt-2"
+                style="font-size: 0.8rem; font-weight: bold"
+              >
+                {{project.years}}
+              </div>
+              <div
+                class="title-bg bg-hibiscus color-dark text-center text-capitalize mt-2"
+                style="font-size: 0.8rem; font-weight: bold"
+              >
+                {{project.institution}}
+              </div>
+            </div>
+            <div class="space40"></div>
+          </div>
         </div>
+        {% endfor %}
+      </div>
     </div>
+  </div>
 </section>

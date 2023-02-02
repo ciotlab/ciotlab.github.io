@@ -2,109 +2,135 @@
 layout: page
 title: "Patent"
 black_menu: true
-header_style: 'one'
+header_style: "one"
 header_image: "/assets/images/art/bg/skku/skku2-2.jpg"
 custom_font: font4
-
-
 ---
 
 <div class="wrapper light-wrapper">
-    <div class="container inner">
-        <div class="grid grid-view boxed">
-            <div class="isotope-filter text-center">
-                <ul>
-                    <li><a class="button active" data-filter="*">All</a></li>
-                    {% for category in site.data.patent.categories %}
-                    <li><a class="button" data-filter=".{{category.filter}}">{{category.title}}</a></li>
-                    {% endfor %}
-                </ul>
-            </div>
-            <div class="clearfix"></div>
-            <div class="space60"></div>
-            <h1 class="display-2 text-center">International</h1>
-            <div class="space40"></div>
-            <div class="tiles">
-                <div class="row isotope light-gallery-wrapper">
-                    {% for item in site.data.patent.international %}
-                    <div class="item grid-sizer col-md-6 col-lg-12 {% for filter in item.filters %} {{filter}} {% endfor %}">
-                        <div class="box bg-white shadow">
-                            <div class="flex-row">
-                                {% for filter in item.filters %}
-                                <div class="badge badge-pill {% if filter == 'international' %}bg-aqua{% elsif filter=='domestic'%}bg-hibiscus{% elsif filter=='granted'%}bg-rose{% elsif filter=='application'%}bg-pink{% else %}bg-meander{% endif %} mr-2">
-                                    {{filter}}
-                                </div>
-                                {% endfor %}
-                            </div>
-                            <div class="space20"></div>
-                            <div class="display-4" style="font-weight:bold;">{{item.title}}</div>
-                            <div class="space10"></div>
-                            <div>{{item.inventor}}, <em>{{item.authority}}</em></div>
-                            <div class="space10"></div>
-                            {% if item.patent_no %}
-                            <div><b>Patent No. : </b> {{item.patent_no}}</div>
-                            {% endif %}
-                            {% if item.patent_date %}
-                            <div><b>Patent Date : </b> {{item.patent_date}}</div>
-                            {% endif %}
-                            {% if item.application_no %}
-                            <div><b>Application No. : </b> {{item.application_no}}</div>
-                            {% endif %}
-                            {% if item.application_date %}
-                            <div><b>Application Date : </b> {{item.application_date}}</div>
-                            {% endif %}
-                            {% if item.link %}
-                            <div class="space10"></div>
-                            <a href="{{item.link}}" target="_blank" class="color-red"><i class="icofont-external-link"></i> Link</a>
-                            {% endif %}
-                            <div class="space20"></div>
-                        </div>
-                    </div>
-                    {% endfor %}
+  <div class="container inner">
+    <div class="grid grid-view boxed">
+      <div
+        class="isotope-filter text-center"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
+        <ul>
+          <li><a class="button active" data-filter="*">All</a></li>
+          {% for category in site.data.patent.categories %}
+          <li>
+            <a class="button" data-filter=".{{category.filter}}"
+              >{{category.title}}</a
+            >
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="clearfix"></div>
+      <div class="space60"></div>
+      <h1 class="display-2 text-center" data-aos="fade-up" data-aos-delay="400">
+        International
+      </h1>
+      <div class="space40"></div>
+      <div class="tiles">
+        <div
+          class="row isotope light-gallery-wrapper"
+          data-aos="fade-up"
+          data-aos-delay="600"
+        >
+          {% for item in site.data.patent.international %}
+          <div
+            class="item grid-sizer col-md-6 col-lg-12 {% for filter in item.filters %} {{filter}} {% endfor %}"
+          >
+            <div class="box bg-white shadow">
+              <div class="flex-row">
+                {% for filter in item.filters %}
+                <div
+                  class="badge badge-pill {% if filter == 'international' %}bg-aqua{% elsif filter=='domestic'%}bg-hibiscus{% elsif filter=='granted'%}bg-rose{% elsif filter=='application'%}bg-pink{% else %}bg-meander{% endif %} mr-2"
+                >
+                  {{filter}}
                 </div>
+                {% endfor %}
+              </div>
+              <div class="space20"></div>
+              <div class="display-4" style="font-weight: bold">
+                {{item.title}}
+              </div>
+              <div class="space10"></div>
+              <div>{{item.inventor}}, <em>{{item.authority}}</em></div>
+              <div class="space10"></div>
+              {% if item.patent_no %}
+              <div><b>Patent No. : </b> {{item.patent_no}}</div>
+              {% endif %} {% if item.patent_date %}
+              <div><b>Patent Date : </b> {{item.patent_date}}</div>
+              {% endif %} {% if item.application_no %}
+              <div><b>Application No. : </b> {{item.application_no}}</div>
+              {% endif %} {% if item.application_date %}
+              <div><b>Application Date : </b> {{item.application_date}}</div>
+              {% endif %} {% if item.link %}
+              <div class="space10"></div>
+              <a href="{{item.link}}" target="_blank" class="color-red"
+                ><i class="icofont-external-link"></i> Link</a
+              >
+              {% endif %}
+              <div class="space20"></div>
             </div>
-            <div class="space60"></div>
-            <h1 class="display-2 text-center">Domestic</h1>
-            <div class="space40"></div>
-            <div class="tiles">
-                <div class="row isotope light-gallery-wrapper">
-                    {% for item in site.data.patent.domestic %}
-                    <div class="item grid-sizer col-md-6 col-lg-12 {% for filter in item.filters %} {{filter}} {% endfor %}">
-                        <div class="box bg-white shadow">
-                            <div class="flex-row">
-                                {% for filter in item.filters %}
-                                <div class="badge badge-pill {% if filter == 'international' %}bg-aqua{% elsif filter=='domestic'%}bg-hibiscus{% elsif filter=='granted'%}bg-rose{% elsif filter=='application'%}bg-pink{% else %}bg-meander{% endif %} mr-2">
-                                    {{filter}}
-                                </div>
-                                {% endfor %}
-                            </div>
-                            <div class="space20"></div>
-                            <div class="display-4" style="font-weight:bold;">{{item.title}}</div>
-                            <div class="space10"></div>
-                            <div>{{item.inventor}}, <em>{{item.authority}}</em></div>
-                            <div class="space10"></div>
-                            {% if item.patent_no %}
-                            <div><b>등록 번호: </b> {{item.patent_no}}</div>
-                            {% endif %}
-                            {% if item.patent_date %}
-                            <div><b>등록일 : </b> {{item.patent_date}}</div>
-                            {% endif %}
-                            {% if item.application_no %}
-                            <div><b>출원 번호 : </b> {{item.application_no}}</div>
-                            {% endif %}
-                            {% if item.application_date %}
-                            <div><b>출원일 : </b> {{item.application_date}}</div>
-                            {% endif %}
-                            {% if item.link %}
-                            <div class="space10"></div>
-                            <a href="{{item.link}}" target="_blank" class="color-red"><i class="icofont-external-link"></i> Link</a>
-                            {% endif %}
-                            <div class="space20"></div>
-                        </div>
-                    </div>
-                    {% endfor %}
-                </div>
-            </div>
+          </div>
+          {% endfor %}
         </div>
+      </div>
+      <div class="space60"></div>
+      <h1 class="display-2 text-center" data-aos="fade-up" data-aos-delay="200">
+        Domestic
+      </h1>
+      <div class="space40"></div>
+      <div class="tiles">
+        <div
+          class="row isotope light-gallery-wrapper"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        >
+          {% for item in site.data.patent.domestic %}
+          <div
+            class="item grid-sizer col-md-6 col-lg-12 {% for filter in item.filters %} {{filter}} {% endfor %}"
+          >
+            <div class="box bg-white shadow">
+              <div class="flex-row">
+                {% for filter in item.filters %}
+                <div
+                  class="badge badge-pill {% if filter == 'international' %}bg-aqua{% elsif filter=='domestic'%}bg-hibiscus{% elsif filter=='granted'%}bg-rose{% elsif filter=='application'%}bg-pink{% else %}bg-meander{% endif %} mr-2"
+                >
+                  {{filter}}
+                </div>
+                {% endfor %}
+              </div>
+              <div class="space20"></div>
+              <div class="display-4" style="font-weight: bold">
+                {{item.title}}
+              </div>
+              <div class="space10"></div>
+              <div>{{item.inventor}}, <em>{{item.authority}}</em></div>
+              <div class="space10"></div>
+              {% if item.patent_no %}
+              <div><b>등록 번호: </b> {{item.patent_no}}</div>
+              {% endif %} {% if item.patent_date %}
+              <div><b>등록일 : </b> {{item.patent_date}}</div>
+              {% endif %} {% if item.application_no %}
+              <div><b>출원 번호 : </b> {{item.application_no}}</div>
+              {% endif %} {% if item.application_date %}
+              <div><b>출원일 : </b> {{item.application_date}}</div>
+              {% endif %} {% if item.link %}
+              <div class="space10"></div>
+              <a href="{{item.link}}" target="_blank" class="color-red"
+                ><i class="icofont-external-link"></i> Link</a
+              >
+              {% endif %}
+              <div class="space20"></div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
     </div>
+  </div>
 </div>

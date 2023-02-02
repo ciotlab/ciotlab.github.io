@@ -3,78 +3,93 @@ layout: page
 title: "Gallery"
 sub_title: "Award & Event"
 black_menu: true
-header_style: 'one'
+header_style: "one"
 custom_font: font4
 header_image: "/assets/images/art/bg/skku/skku2-2.jpg"
 ---
+
 <div class="wrapper light-wrapper">
-    <div class="container inner">
-        <div class="grid gird-view boxed">
-            <div class="isotope-filter text-center">
-                <ul>
-                  <li><a class="button active" data-filter="*">All</a></li>
-                  {% for category in site.data.gallery.portfolios_area.categories %}
-                   <li><a class="button" data-filter=".{{category.filter}}">{{category.title}}</a></li>
-                  {% endfor %}
-                </ul>
-            </div>
-            <div class="clearfix"></div>
-            <div class="tiles">
-                <div class="row isotope light-gallery-wrapper">
-                    {% for portfolio in site.data.gallery.portfolios_area.portfolios %}
-                    <div id="{{portfolio.title}}" class="item grid-sizer col-md-6 col-lg-12 {% for filter in portfolio.filters %} {{filter}} {% endfor %}">
-                        <div class="box bg-white shadow">
-                            <div class="post-content">
-                                <div class="category text-center">
-                                    <div class="flex-row">
-                                        {% for filter in portfolio.filters %}
-                                        <div class="badge badge-pill {% if filter == 'event' %}bg-aqua{% elsif filter=='award'%}bg-hibiscus{% else %}bg-meander{% endif %} mr-2">
-                                            {{filter}}
-                                        </div>
-                                        {% endfor %}
-                                    </div>
-                                </div>
-                                <h1 class="post-title text-center">
-                                    {{portfolio.title}}
-                                </h1>
-                                {% if portfolio.date %}
-                                <div class="meta text-center">
-                                    <i class="jam jam-clock"></i> {{portfolio.date}}
-                                </div>
-                                {% endif %}
-                                {% if portfolio.content %}
-                                <p class="text-center">{{portfolio.content}}</p>
-                                {% endif %}
-                            </div>
-                            <div class="space20"></div>
-                            <div class="row">
-                                {% for image in portfolio.images %}
-                                {% if forloop.length == 1 %}
-                                <div class="col-md-6 col-lg-12" >
-                                    <figure class="rounded text-center">
-                                        <img src="{{image.img}}" style="width: fit-content;" alt="{{portfolio.title}}">
-                                    </figure>
-                                </div>
-                                {% elsif forloop.length < 3 %}
-                                <div class="col-md-6">
-                                    <figure class="rounded">
-                                        <img src="{{image.img}}" alt="{{portfolio.title}}">
-                                    </figure>
-                                </div>
-                                {% else %}
-                                <div class="col-md-4">
-                                    <figure class="rounded shadow">
-                                        <img src="{{image.img}}" alt="{{portfolio.title}}">
-                                    </figure>
-                                </div>
-                                {% endif %}
-                                {% endfor %}
-                            </div>
-                        </div>
+  <div class="container inner">
+    <div class="grid gird-view boxed">
+      <div
+        class="isotope-filter text-center"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
+        <ul>
+          <li><a class="button active" data-filter="*">All</a></li>
+          {% for category in site.data.gallery.portfolios_area.categories %}
+          <li>
+            <a class="button" data-filter=".{{category.filter}}"
+              >{{category.title}}</a
+            >
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="clearfix"></div>
+      <div class="tiles">
+        <div class="row isotope light-gallery-wrapper">
+          {% for portfolio in site.data.gallery.portfolios_area.portfolios %}
+          <div
+            id="{{portfolio.title}}"
+            class="item grid-sizer col-md-6 col-lg-12 {% for filter in portfolio.filters %} {{filter}} {% endfor %}"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="box bg-white shadow">
+              <div class="post-content">
+                <div class="category text-center">
+                  <div class="flex-row">
+                    {% for filter in portfolio.filters %}
+                    <div
+                      class="badge badge-pill {% if filter == 'event' %}bg-aqua{% elsif filter=='award'%}bg-hibiscus{% else %}bg-meander{% endif %} mr-2"
+                    >
+                      {{filter}}
                     </div>
                     {% endfor %}
+                  </div>
                 </div>
+                <h1 class="post-title text-center">{{portfolio.title}}</h1>
+                {% if portfolio.date %}
+                <div class="meta text-center">
+                  <i class="jam jam-clock"></i> {{portfolio.date}}
+                </div>
+                {% endif %} {% if portfolio.content %}
+                <p class="text-center">{{portfolio.content}}</p>
+                {% endif %}
+              </div>
+              <div class="space20"></div>
+              <div class="row">
+                {% for image in portfolio.images %} {% if forloop.length == 1 %}
+                <div class="col-md-6 col-lg-12">
+                  <figure class="rounded text-center">
+                    <img
+                      src="{{image.img}}"
+                      style="width: fit-content"
+                      alt="{{portfolio.title}}"
+                    />
+                  </figure>
+                </div>
+                {% elsif forloop.length < 3 %}
+                <div class="col-md-6">
+                  <figure class="rounded">
+                    <img src="{{image.img}}" alt="{{portfolio.title}}" />
+                  </figure>
+                </div>
+                {% else %}
+                <div class="col-md-4">
+                  <figure class="rounded shadow">
+                    <img src="{{image.img}}" alt="{{portfolio.title}}" />
+                  </figure>
+                </div>
+                {% endif %} {% endfor %}
+              </div>
             </div>
+          </div>
+          {% endfor %}
         </div>
+      </div>
     </div>
+  </div>
 </div>
