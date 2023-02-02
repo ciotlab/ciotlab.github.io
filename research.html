@@ -2,165 +2,193 @@
 layout: page
 title: "Research Area"
 black_menu: true
-header_style: 'one'
+header_style: "one"
 header_image: "/assets/images/art/bg/skku/skku2-2.jpg"
 custom_font: font4
-
+quickmenu: true
 ---
 
-<!-- <div class="wrapper light-wrapper">
-    <div class="container inner">
-        <div class="row">
-            {% for research in site.data.research.research_area %}
-            <div class="col-md-12">
-                <div class="box bg-white shadow">
-                    <div class="row" style="vertical-align:middle;">
-                        <div class="col-md-11 mb-0">
-                            <h4><a href="#{{research.title}}">{{research.title}}</a></h4>
-                        </div>
-                        <div class="col-md-1 text-center mt-0" >
-                            <i style="font-size:1.6rem;" class="color-default jam jam-arrow-right"></i>
-                        </div>    
-                    </div>
-                </div>
-            </div>
-            {% if forloop.index != forloop.length %}
-            <div class="space20"></div>
-            {% endif %}
-            {% endfor %}
-        </div>
+{% if page.quickmenu %}
+<div class="d-none d-xl-block">
+  <div class="quickmenu">
+    <div id="skip-bar" class="list-group">
+      {% for research in site.data.research.research_area %}
+      <a
+        class="list-group-item list-group-item-action"
+        href="#{{research.title}}"
+        style="
+          overflow: hidden;
+          word-break: break-word;
+          text-overflow: ellipsis;
+          display: inline-block;
+          white-space: nowrap;
+        "
+      >
+        {{forloop.index}}. {{research.title}}
+      </a>
+      {% endfor %}
     </div>
-</div> -->
-
-{% assign wrapper_switch = true %}
-{% for research in site.data.research.research_area %}
-<section id="{{research.title}}">
-<div class="wrapper {% if wrapper_switch %}light-wrapper{% else %}wrapper bg-opacity-default{% endif %}">
-    <div class="container inner">
+  </div>
+</div>
+{% endif %}
+<div>
+  {% assign wrapper_switch = true %} {% for research in
+  site.data.research.research_area %}
+  <section id="{{research.title}}">
+    <div
+      class="wrapper {% if wrapper_switch %}light-wrapper{% else %}wrapper bg-opacity-default{% endif %}"
+    >
+      <div class="container inner">
         <div class="row">
-            <div class="col">
-                <h1 class="display-1">{{research.title}}</h1>
-            </div>
+          <div class="col">
+            <h1 class="display-1" data-aos="fade-up" data-aos-delay="100">
+              {{research.title}}
+            </h1>
+          </div>
         </div>
         <div class="space80"></div>
         <div class="row">
-            <div class="col-md-3 col-sm-12">
-                <h1 class="display-2 color-purple">Overview</h1>
-            </div>
-            <div class="col-md-9 col-sm-12 mt-2 color-dark" style="font-size:1.2rem; line-height: 1.8rem;">
-                {% for paragraph in research.overview %}
-                <p>
-                    {{paragraph.p}}
-                </p>
-                {% endfor %}
-            </div>
+          <div class="col-md-3 col-sm-12">
+            <h1
+              class="display-2 color-purple"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              Overview
+            </h1>
+          </div>
+          <div
+            class="col-md-9 col-sm-12 mt-2 color-dark"
+            style="font-size: 1.2rem; line-height: 1.8rem"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            {% for paragraph in research.overview %}
+            <p>{{paragraph.p}}</p>
+            {% endfor %}
+          </div>
         </div>
         {% if research.main_images %}
         <div class="space80"></div>
         <div class="space20"></div>
-        <div class="row">
-        {% for image in research.main_images %}
-            {% if forloop.length == 1 %}
-            <div class="col-md-12 col-lg-12">
-                <figure class="rounded text-center cover shadow">
-                    <img src="{{image.img}}" alt="">
-                </figure>
-            </div>
-            {% elsif forloop.length == 2 %}
-            <div class="col-md-12 col-lg-6">
-                <figure class="rounded text-center cover shadow">
-                    <img src="{{image.img}}" alt="">
-                </figure>
-            </div>
-            {% else %}
-            <div class="col-md-4">
-                <figure class="rounded text-center cover shadow">
-                    <img src="{{image.img}}" alt="">
-                </figure>
-            </div>
-            {% endif %}
-        {% endfor %}
+        <div class="row" data-aos="fade-up" data-aos-delay="400">
+          {% for image in research.main_images %} {% if forloop.length == 1 %}
+          <div class="col-md-12 col-lg-12">
+            <figure class="rounded text-center cover shadow">
+              <img src="{{image.img}}" alt="" />
+            </figure>
+          </div>
+          {% elsif forloop.length == 2 %}
+          <div class="col-md-12 col-lg-6">
+            <figure class="rounded text-center cover shadow">
+              <img src="{{image.img}}" alt="" />
+            </figure>
+          </div>
+          {% else %}
+          <div class="col-md-4">
+            <figure class="rounded text-center cover shadow">
+              <img src="{{image.img}}" alt="" />
+            </figure>
+          </div>
+          {% endif %} {% endfor %}
         </div>
-        {% endif %}
-        {% if research.challenge %}
+        {% endif %} {% if research.challenge %}
         <div class="space80"></div>
         <div class="space20"></div>
         <div class="row">
-            <div class="col-md-3 col-sm-12">
-                <h1 class="display-2 color-purple">Challenge</h1>
-            </div>
-            <div class="col-md-9 col-sm-12 mt-2 color-dark" style="font-size:1.2rem; line-height: 1.8rem;">
-                {% for paragraph in research.challenge %}
-                <p>
-                    {{paragraph.p}}
-                </p>
-                {% endfor %}
-            </div>
+          <div class="col-md-3 col-sm-12">
+            <h1
+              class="display-2 color-purple"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              Challenge
+            </h1>
+          </div>
+          <div
+            class="col-md-9 col-sm-12 mt-2 color-dark"
+            style="font-size: 1.2rem; line-height: 1.8rem"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            {% for paragraph in research.challenge %}
+            <p>{{paragraph.p}}</p>
+            {% endfor %}
+          </div>
         </div>
-        {% endif %}
-        {% if research.sub_images %}
+        {% endif %} {% if research.sub_images %}
+        <div class="space80"></div>
+        <div class="space20"></div>
+        <div class="row" data-aos="fade-up" data-aos-delay="400">
+          {% for image in research.sub_images %} {% if forloop.length == 1 %}
+          <div class="col-md-12 col-lg-12">
+            <figure class="rounded text-center cover shadow">
+              <img src="{{image.img}}" alt="" />
+            </figure>
+          </div>
+          {% elsif forloop.length == 2 %}
+          <div class="col-md-12 col-lg-6">
+            <figure class="rounded text-center shadow cover">
+              <img src="{{image.img}}" alt="" />
+            </figure>
+          </div>
+          {% else %}
+          <div class="col-md-4">
+            <figure class="rounded text-center shadow cover">
+              <img src="{{image.img}}" alt="" />
+            </figure>
+          </div>
+          {% endif %} {% endfor %}
+        </div>
+        {% endif %} {% if research.process %}
         <div class="space80"></div>
         <div class="space20"></div>
         <div class="row">
-        {% for image in research.sub_images %}
-            {% if forloop.length == 1 %}
-            <div class="col-md-12 col-lg-12">
-                <figure class="rounded text-center cover shadow">
-                    <img src="{{image.img}}" alt="">
-                </figure>
+          <div class="col-md-3 col-sm-12">
+            <h1
+              class="display-2 color-purple"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              Process
+            </h1>
+          </div>
+          <div
+            class="col-md-9 col-sm-12 mt-2 color-dark"
+            style="font-size: 1.2rem; line-height: 1.8rem"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            {% for paragraph in research.process %}
+            <p>{{paragraph.p}}</p>
+            {% endfor %}
+          </div>
+        </div>
+        {% endif %} {% if research.videos %}
+        <div class="row" data-aos="fade-up" data-aos-delay="500">
+          <div class="space80"></div>
+          <div class="space20"></div>
+          {% for video in research.videos %}
+          <div class="col-md-12 col-lg-12">
+            <div class="shadow" style="width: 100%; padding-bottom: 56.25%">
+              <iframe
+                style="width: 100%; height: 100%; position: absolute"
+                src="https://www.youtube.com/embed/{{video.link}}"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
             </div>
-            {% elsif forloop.length == 2 %}
-            <div class="col-md-12 col-lg-6">
-                <figure class="rounded text-center shadow cover">
-                    <img src="{{image.img}}" alt="">
-                </figure>
-            </div>
-            {% else %}
-            <div class="col-md-4">
-                <figure class="rounded text-center shadow cover">
-                    <img src="{{image.img}}" alt="">
-                </figure>
-            </div>
-            {% endif %}
-        {% endfor %}
+          </div>
+          <div class="space40"></div>
+          {% endfor %}
         </div>
         {% endif %}
-        {% if research.process %}
-        <div class="space80"></div>
-        <div class="space20"></div>
-        <div class="row">
-            <div class="col-md-3 col-sm-12">
-                <h1 class="display-2 color-purple">Process</h1>
-            </div>
-            <div class="col-md-9 col-sm-12 mt-2 color-dark" style="font-size:1.2rem; line-height: 1.8rem;">
-                {% for paragraph in research.process %}
-                <p>
-                    {{paragraph.p}}
-                </p>
-                {% endfor %}
-            </div>
-        </div>
-        {% endif %}
-        {% if research.videos %}
-        <div class="row">
-            <div class="space80"></div>
-            <div class="space20"></div>
-        {% for video in research.videos %}
-            <div class="col-md-12 col-lg-12">
-                <div class="shadow" style="width:100%; padding-bottom:56.25%;">
-                    <iframe style="width:100%; height:100%; position: absolute;" src="https://www.youtube.com/embed/{{video.link}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>                
-            </div>
-            <div class="space40"></div>
-        {% endfor %}
-        </div>
-        {% endif %}
+      </div>
     </div>
+    {% if wrapper_switch == true %} {% assign wrapper_switch = false %} {% else
+    %} {% assign wrapper_switch = true %} {% endif %}
+  </section>
+  {% endfor %}
 </div>
-{% if wrapper_switch == true %}
-{% assign wrapper_switch = false %}
-{% else %}
-{% assign wrapper_switch = true %}
-{% endif %}
-</section>
-{% endfor %}
