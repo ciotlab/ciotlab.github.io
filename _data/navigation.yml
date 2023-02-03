@@ -1,64 +1,62 @@
 main_menu:
-
   - text: "HOME"
     url: "/"
     has_menu: false
 
   - text: "PEOPLE"
-    url: "/professor"
+    url: "/pages/professor/"
     menu_type: "dropdown"
     has_submenu: "true"
     submenu:
       - text: "Prof"
-        url: "/professor"
+        url: "/pages/professor/"
 
       - text: "PhD"
-        url: "/people#Phd"
+        url: "/pages/people/#Phd"
 
       - text: "Master"
-        url: "/people#Master"
+        url: "/pages/people/#Master"
 
       - text: "Undergraduate"
-        url: "/people#Undergraduate"
-      
+        url: "/pages/people/#Undergraduate"
+
       - text: "Alumni"
-        url: "/people#Alumni"
+        url: "/pages/people/#Alumni"
 
   - text: "RESEARCH"
-    url: "/research"
+    url: "/pages/research/"
     menu_type: "dropdown"
     submenu:
       - text: "Research Area"
-        url: "/research"
+        url: "/pages/research/"
       - text: "Testbed Video"
-        url: "/video"
-      
+        url: "/pages/video/"
 
   - text: "PROJECT"
-    url: "/project"
+    url: "/pages/project/"
     submenu:
       - text: "Current Project"
-        url: "/project#current"
+        url: "/pages/project/#current"
 
       - text: "Past Project"
-        url: "/project#past"
+        url: "/pages/project/#past"
 
   - text: "PUBLICATION"
-    url: "/journal"
+    url: "/pages/journal/"
     submenu:
       - text: "Journal"
-        url: "/journal"
+        url: "/pages/journal/"
 
       - text: "Conference"
-        url: "/conference"
+        url: "/pages/conference/"
 
       - text: "Patent"
-        url: "/patent"
+        url: "/pages/patent/"
 
   - text: "GALLERY"
-    url: "/gallery"
+    url: "/pages/gallery/"
     has_menu: false
-  
+
   - text: "CONTACT"
-    url: "/contact"
+    url: "/pages/contact/"
     has_menu: false
