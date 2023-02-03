@@ -4,59 +4,59 @@ main_menu:
     has_menu: false
 
   - text: "PEOPLE"
-    url: "/professor/"
+    url: "/professor"
     menu_type: "dropdown"
     has_submenu: "true"
     submenu:
       - text: "Prof"
-        url: "/professor/"
+        url: "/professor"
 
       - text: "PhD"
-        url: "/people/#Phd"
+        url: "/people#Phd"
 
       - text: "Master"
-        url: "/people/#Master"
+        url: "/people#Master"
 
       - text: "Undergraduate"
-        url: "/people/#Undergraduate"
+        url: "/people#Undergraduate"
 
       - text: "Alumni"
-        url: "/people/#Alumni"
+        url: "/people#Alumni"
 
   - text: "RESEARCH"
-    url: "/research/"
+    url: "/research"
     menu_type: "dropdown"
     submenu:
       - text: "Research Area"
-        url: "/research/"
+        url: "/research"
       - text: "Testbed Video"
-        url: "/video/"
+        url: "/video"
 
   - text: "PROJECT"
-    url: "/project/"
+    url: "/project"
     submenu:
       - text: "Current Project"
-        url: "/project/#current"
+        url: "/project#current"
 
       - text: "Past Project"
-        url: "/project/#past"
+        url: "/project#past"
 
   - text: "PUBLICATION"
-    url: "/journal/"
+    url: "/journal"
     submenu:
       - text: "Journal"
-        url: "/journal/"
+        url: "/journal"
 
       - text: "Conference"
-        url: "/conference/"
+        url: "/conference"
 
       - text: "Patent"
-        url: "/patent/"
+        url: "/patent"
 
   - text: "GALLERY"
-    url: "/gallery/"
+    url: "/gallery"
     has_menu: false
 
   - text: "CONTACT"
-    url: "/contact/"
+    url: "/contact"
     has_menu: false
