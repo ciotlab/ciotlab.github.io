@@ -80,15 +80,15 @@ newsletter:
     <div class="space100"></div>
     <div class="row">
       <div class="col-lg-7 col-xl-7">
-        <h1 class="display-1" data-aos="fade-up" data-aos-delay="300">
+        <h1 class="display-1" data-aos="fade-up" data-aos-delay="100">
           {{page.header.title}}
         </h1>
         <div class="space10"></div>
-        <p class="lead larger" data-aos="fade-up" data-aos-delay="500">
+        <p class="lead larger" data-aos="fade-up" data-aos-delay="200">
           {{page.header.content}}
         </p>
         <div class="space25"></div>
-        <div class="d-inline-block" data-aos="fade-up" data-aos-delay="700">
+        <div class="d-inline-block" data-aos="fade-up" data-aos-delay="300">
           <a
             href="/contact"
             class="btn btn-l btn-white btn-strong-hover btn-icon btn-icon-left mr-10"
@@ -100,7 +100,7 @@ newsletter:
     </div>
     <div class="space100"></div>
   </div>
-  <div class="divider">
+  <div class="divider d-none d-md-block">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       class="fill-light-wrapper"
@@ -113,7 +113,7 @@ newsletter:
 </div>
 <div class="wrapper overflow-top bleed-l pointer-none d-none d-lg-block">
   <div class="container text-right">
-    <div class="row" data-aos="fade-up" data-aos-delay="1100">
+    <div class="row" data-aos="fade-up" data-aos-delay="400">
       <div class="col-lg-4 offset-lg-8 col-xl-4 offset-xl-8">
         <figure style="width: 25rem; margin-top: 10rem">
           <img src="/assets/images/art/bg/iso_Inten51.png" alt="" />
@@ -127,14 +127,14 @@ newsletter:
 <!-- projects -->
 <div class="wrapper light-wrapper">
   <div class="container inner">
-    <h1 class="display-1 ml-10" data-aos="fade-up" data-aos-delay="300">
+    <h1 class="display-1 ml-10" data-aos="fade-up" data-aos-delay="100">
       Current Project
     </h1>
     <div class="space20"></div>
     <div
       class="grid-view boxed light-gallery-wrapper"
       data-aos="fade-up"
-      data-aos-delay="600"
+      data-aos-delay="200"
     >
       <div
         class="carousel owl-carousel gap-small"
@@ -184,7 +184,7 @@ newsletter:
     </div>
   </div>
   <div class="space60"></div>
-  <div class="divider">
+  <div class="divider d-none d-md-block">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       class="fill-gray-wrapper"
@@ -201,14 +201,14 @@ newsletter:
 <!-- research -->
 <div class="wrapper gray-wrapper">
   <div class="container inner">
-    <h1 class="display-1 ml-10" data-aos="fade-up" data-aos-delay="300">
+    <h1 class="display-1 ml-10" data-aos="fade-up" data-aos-delay="100">
       Research Area
     </h1>
     <div class="space20"></div>
     <div class="grid-view boxed light-gallery-wrapper">
-      <div class="row">
+      <div class="row" data-aos="fade-up" data-aos-delay="200">
         {% for research in site.data.research.research_area %}
-        <div class="item col-md-4" data-aos="fade-up" data-aos-delay="400">
+        <div class="item col-md-4">
           <div class="space30"></div>
           <div class="box bg-white shadow p-30" style="height: 20rem">
             <div class="post-content align-item-center">
@@ -248,7 +248,7 @@ newsletter:
       </div>
     </div>
   </div>
-  <div class="divider">
+  <div class="divider d-none d-md-block">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       class="fill-default"
@@ -266,7 +266,7 @@ newsletter:
     <h1
       class="display-1 ml-10 color-white"
       data-aos="fade-up"
-      data-aos-delay="300"
+      data-aos-delay="100"
     >
       Gallery
     </h1>
@@ -274,7 +274,7 @@ newsletter:
     <div
       class="grid-view boxed light-gallery-wrapper text-center"
       data-aos="fade-up"
-      data-aos-delay="400"
+      data-aos-delay="200"
     >
       <div
         class="carousel owl-carousel gap-small"
@@ -319,7 +319,7 @@ newsletter:
     </div>
   </div>
   <div class="space60"></div>
-  <div class="divider">
+  <div class="divider d-none d-md-block">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       class="fill-footer-dark-wrapper"
