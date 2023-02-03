@@ -9,7 +9,7 @@ header_image: "/assets/images/art/bg/skku/skku2-2.jpg"
 
 <div class="wrapper light-wrapper">
   <div class="container inner">
-    <div class="grid grid-view boxed" data-aos="fade-up" data-aos-delay="200">
+    <div class="grid grid-view boxed" data-aos="fade-up" data-aos-delay="100">
       <div class="isotope-filter text-center">
         <ul>
           <li><a class="button active" data-filter="*">All</a></li>
@@ -29,10 +29,10 @@ header_image: "/assets/images/art/bg/skku/skku2-2.jpg"
           <div
             class="item grid-sizer col-md-6 col-lg-12 {% for filter in item.filters %} {{filter}} {% endfor %}"
             data-aos="fade-up"
-            data-aos-delay="300"
+            data-aos-delay="200"
           >
             <div class="box bg-white shadow">
-              <h1 class="display-2 text-center">{{item.title}}</h1>
+              <h1 class="post-title text-center">{{item.title}}</h1>
               <div class="space20"></div>
               <div class="flex-row text-center">
                 {% for filter in item.filters %}
@@ -42,9 +42,7 @@ header_image: "/assets/images/art/bg/skku/skku2-2.jpg"
               <div class="space20"></div>
               {% if item.content %}
               <div class="space20"></div>
-              <p class="text-center" style="font-size: 1rem">
-                {{item.content}}
-              </p>
+              <p style="font-size: 1rem">{{item.content}}</p>
               <div class="space20"></div>
               {% endif %} {% if item.thumbnails %}
               <div class="space40"></div>
@@ -70,13 +68,7 @@ header_image: "/assets/images/art/bg/skku/skku2-2.jpg"
                 {% for video in item.videos %}
                 <div class="col-md-12 col-lg-12">
                   {% if video.sub_title %}
-                  <h2 class="color-default">
-                    <i
-                      class="jam jam-circle-f mr-2"
-                      style="font-size: 0.1rem; vertical-align: middle"
-                    ></i
-                    >{{video.sub_title}}
-                  </h2>
+                  <h2 class="display-5 color-default">- {{video.sub_title}}</h2>
                   <div class="space20"></div>
                   {% endif %}
                   <div
@@ -97,9 +89,7 @@ header_image: "/assets/images/art/bg/skku/skku2-2.jpg"
                   </div>
                   {% if video.sub_content %}
                   <div class="space20"></div>
-                  <p class="text-center" style="font-size: 1rem">
-                    {{video.sub_content}}
-                  </p>
+                  <p style="font-size: 1rem">{{video.sub_content}}</p>
                   <div class="space40"></div>
                   {% endif %}
                   <div class="space40"></div>
