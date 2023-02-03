@@ -55,7 +55,7 @@ quickmenu: true
               </div>
               <div class="d-none d-md-block ml-20"></div>
               <div
-                class="col-md-8 col-sm-12 mt-2 color-dark"
+                class="{% if page.quickmenu %}col-md-8{% else %}col-md-10{% endif %} col-sm-12 mt-2 color-dark"
                 style="font-size: 1rem; line-height: 1.8rem"
               >
                 {% for paragraph in research.overview %}
@@ -97,7 +97,7 @@ quickmenu: true
               </div>
               <div class="d-none d-md-block ml-20"></div>
               <div
-                class="col-md-8 col-sm-12 mt-2 color-dark"
+                class="{% if page.quickmenu %}col-md-8{% else %}col-md-10{% endif %} col-sm-12 mt-2 color-dark"
                 style="font-size: 1rem; line-height: 1.8rem"
               >
                 {% for paragraph in research.challenge %}
@@ -139,7 +139,7 @@ quickmenu: true
               </div>
               <div class="d-none d-md-block ml-20"></div>
               <div
-                class="col-md-8 col-sm-12 mt-2 color-dark"
+                class="{% if page.quickmenu %}col-md-8{% else %}col-md-10{% endif %} col-sm-12 mt-2 color-dark"
                 style="font-size: 1rem; line-height: 1.8rem"
               >
                 {% for paragraph in research.process %}
