@@ -30,13 +30,13 @@ image_boundary: "rounded"
             {% for member in category.members %}
             <div class="space20"></div>
             <div class="{% if page.row_num == 1 %}col-md-12{% else %}col-md-6{% endif %} mb-40">
-                <div class="row" >
-                    <div class="col-md-2 col-sm-12 {% if left==false %}order-md-2{% endif %}" {% if left==false %}style="text-align:end;"{% endif %} data-aos="fade-up" data-aos-delay="100">
+                <div class="row" data-aos="fade-up" data-aos-delay="100">
+                    <div class="col-md-2 col-sm-12 {% if left==false %}order-md-2{% endif %}" {% if left==false %}style="text-align:end;"{% endif %}>
                         <figure class="mb-10 {% if page.image_boundary == 'blob' %}img-blob blob1{% else %}rounded{% endif %}">
                             <img src="{{member.image}}" style="width:{{image_ratio_num | times: 2}}rem; height:{{image_ratio_num | times: 3}}rem; object-fit:cover; overflow: hidden;" alt=""/>
                         </figure>
                     </div>
-                    <div class="col-md-10 col-sm-12 {% if left==false %}order-md-1{% endif %}" {% if left==false %}style="text-align:end;"{% endif %} data-aos="fade-up" data-aos-delay="100">
+                    <div class="col-md-10 col-sm-12 {% if left==false %}order-md-1{% endif %}" {% if left==false %}style="text-align:end;"{% endif %} >
                         <h4 class="mb-15 mt-10" style="font-size: 1.4rem">{{member.name}}</h4>
                         {% if member.education %}
                         <div class="mb-2" style="font-size: 1rem"><b>Education : </b>
@@ -46,7 +46,7 @@ image_boundary: "rounded"
                         </div>
                         {% endif %}
                         <div class="mb-2 mt-2" style="font-size: 1rem">{{member.research}}</div>
-                        <div class="mb-0" style="font-size: 1rem"><i class="jam jam-envelope-f mr-2"></i>{{member.email}}</div>
+                        <div class="mb-0" style="font-size: 0.8rem"><i class="jam jam-envelope-f mr-2"></i>{{member.email}}</div>
                     </div>
 
                 {% if left == true and page.row_num == 1 %}
