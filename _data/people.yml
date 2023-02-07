@@ -115,6 +115,16 @@ members_info:
         research: "Bio Signal Acquisition and Processing"
         image: "/assets/images/art/profile/profile_undergraduate_jojunhee.jpg"
         email: "jhcho9811@naver.com"
+        
+      - name: "정민준(Jun Min Jung)"
+        research: "Radar Signal processing"
+        image: "/assets/images/art/profile/profile_undergraduate_jungminjun.jpg"
+        email: "minjun96@o365.skku.edu"
+        
+      - name: "이주원(Joo Won Lee)"
+        research: "Wireless Communication"
+        image: "/assets/images/art/profile/profile_undergraduate_leejoowon.jpg"
+        email: "joowonyeri@gmail.com"
    
    - title: "Alumni"
      members:
