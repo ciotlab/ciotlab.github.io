@@ -29,30 +29,10 @@ members_info:
 
    - title: "Master"
      members:
-      - name: "박종인(Jong In Park)"
-        research: "AI Communications"
-        image: "/assets/images/art/profile/profile_master_parkjongin.jpg"
-        email: "pj5807@naver.com"
-    
-      - name: "이상원(Sang Won Lee)"
-        research: "Radar Signal processing"
-        image: "/assets/images/art/profile/profile_master_leesangwon.jpg"
-        email: "kl0081kl@g.skku.edu"
-
       - name: "천세원(Sae Won Cheon)"
         research: "Bio Signal Acquisition and Processing"
         image: "/assets/images/art/profile/profile_master_cheonsaewon.jpg"
         email: "csw980303@skku.edu"
-
-      - name: "이유진(YuJin Lee)"
-        research: "Computer Vision"
-        image: "/assets/images/art/profile/profile_master_leeyujin.jpg"
-        email: "leeyoujin225@gmail.com"
-
-      - name: "이미현(Mi Hyun Lee)"
-        research: "FPGA"
-        image: "/assets/images/art/profile/profile_master_leemihyun.jpg"
-        email: "curinglee@gmail.com"
 
       - name: "윤채원(Chaewon Yun)"
         research: "Hybrid Beamforming"
@@ -83,43 +63,38 @@ members_info:
         research: "Bio Signal Acquisition and Processing"
         image: "/assets/images/art/profile/profile_master_ghafar.jpg"
         email: "ghafaramadhan@gmail.com"
+        
+      - name: "조준희(Jun Hee Jo)"
+        research: "Bio Signal Acquisition and Processing"
+        image: "/assets/images/art/profile/profile_master_jojunhee.jpg"
+        email: "jhcho9811@naver.com"
+        
+      - name: "박지용(Ji Yong Park)"
+        research: "Radar Signal processing"
+        image: "/assets/images/art/profile/profile_master_parkjiyong.jpg"
+        email: "qkr1020@skku.edu"
+
+      - name: "김근호(Geun Ho Kim)"
+        research: "Wireless Communication"
+        image: "/assets/images/art/profile/profile_master_kimkeunho.jpg"
+        email: "kgh30312@g.skku.edu"
+        
+      - name: "박수영(Su Young Park)"
+        research: "Wireless Communication"
+        image: "/assets/images/art/profile/profile_master_parksuyoung.jpg"
+        email: "suyoung6918@gmail.com"
+        
+      - name: "정민준(Jun Min Jung)"
+        research: "Radar Signal processing"
+        image: "/assets/images/art/profile/profile_master_jungminjun.jpg"
+        email: "minjun96@o365.skku.edu"      
 
    - title: "Undergraduate"
      members:
-      - name: "박지용(Ji Yong Park)"
-        research: "Radar Signal processing"
-        image: "/assets/images/art/profile/profile_undergraduate_parkjiyong.jpg"
-        email: "qkr1020@skku.edu"
-      
       - name: "윤준희(Jun Hui Yoon)"
         research: "Wireless Communication"
         image: "/assets/images/art/profile/profile_undergraduate_yoonjunhui.jpg"
         email: "yjh990209@g.skku.edu"
-      
-      - name: "김근호(Geun Ho Kim)"
-        research: "Wireless Communication"
-        image: "/assets/images/art/profile/profile_undergraduate_kimkeunho.jpg"
-        email: "kgh30312@g.skku.edu"
-
-      - name: "박수영(Su Young Park)"
-        research: "Wireless Communication"
-        image: "/assets/images/art/profile/profile_undergraduate_parksuyoung.jpg"
-        email: "suyoung6918@gmail.com"
-      
-      - name: "장혁(Hyeok Jang)"
-        research: "Wireless Communication"
-        image: "/assets/images/art/profile/profile_undergraduate_janghyeok.jpg"
-        email: "hjanghyeok@naver.com"
-
-      - name: "조준희(Jun Hee Jo)"
-        research: "Bio Signal Acquisition and Processing"
-        image: "/assets/images/art/profile/profile_undergraduate_jojunhee.jpg"
-        email: "jhcho9811@naver.com"
-        
-      - name: "정민준(Jun Min Jung)"
-        research: "Radar Signal processing"
-        image: "/assets/images/art/profile/profile_undergraduate_jungminjun.jpg"
-        email: "minjun96@o365.skku.edu"
         
       - name: "이주원(Joo Won Lee)"
         research: "Wireless Communication"
@@ -127,7 +102,37 @@ members_info:
         email: "joowonyeri@gmail.com"
    
    - title: "Alumni"
-     members:
+     members:     
+      - name: "이미현(Mi Hyun Lee)"
+        research: "FPGA"
+        image: "/assets/images/art/profile/profile_alumni_leemihyun.jpg"
+        email: "curinglee@gmail.com"
+        education: "Master"
+        
+      - name: "이유진(YuJin Lee)"
+        research: "Computer Vision"
+        image: "/assets/images/art/profile/profile_alumni_leeyujin.jpg"
+        email: "leeyoujin225@gmail.com"
+        education: "Master"
+        
+     - name: "박종인(Jong In Park)"
+        research: "AI Communications"
+        image: "/assets/images/art/profile/profile_alumni_parkjongin.jpg"
+        email: "pj5807@naver.com"   
+        education: "Master"
+        
+      - name: "이상원(Sang Won Lee)"
+        research: "Radar Signal processing"
+        image: "/assets/images/art/profile/profile_alumni_leesangwon.jpg"
+        email: "kl0081kl@g.skku.edu"
+        education: "Master"
+        
+      - name: "장혁(Hyeok Jang)"
+        research: "Wireless Communication"
+        image: "/assets/images/art/profile/profile_alumni_janghyeok.jpg"
+        email: "hjanghyeok@naver.com"
+        education: "Undergraduate"
+        
       - name: "장용규(Yong kyu Jang)"
         research: "Wireless Communication"
         image: "/assets/images/art/profile/profile_alumni_jangyongkyu.jpg"
