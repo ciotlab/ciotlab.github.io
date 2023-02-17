@@ -44,16 +44,6 @@ members_info:
         image: "/assets/images/art/profile/profile_master_cheonsaewon.jpg"
         email: "csw980303@skku.edu"
 
-      - name: "이유진(YuJin Lee)"
-        research: "Computer Vision"
-        image: "/assets/images/art/profile/profile_master_leeyujin.jpg"
-        email: "leeyoujin225@gmail.com"
-
-      - name: "이미현(Mi Hyun Lee)"
-        research: "FPGA"
-        image: "/assets/images/art/profile/profile_master_leemihyun.jpg"
-        email: "curinglee@gmail.com"
-
       - name: "윤채원(Chaewon Yun)"
         research: "Hybrid Beamforming"
         image: "/assets/images/art/profile/profile_master_yunchaewon.jpg"
@@ -112,7 +102,19 @@ members_info:
         email: "jhcho9811@naver.com"
    
    - title: "Alumni"
-     members:           
+     members:     
+      - name: "이유진(YuJin Lee)"
+        research: "Computer Vision"
+        image: "/assets/images/art/profile/profile_alumni_leeyujin.jpg"
+        email: "leeyoujin225@gmail.com"
+        education: "Master"
+
+      - name: "이미현(Mi Hyun Lee)"
+        research: "FPGA"
+        image: "/assets/images/art/profile/profile_alumni_leemihyun.jpg"
+        email: "curinglee@gmail.com"
+        education: "Master"
+        
       - name: "장혁(Hyeok Jang)"
         research: "Wireless Communication"
         image: "/assets/images/art/profile/profile_alumni_janghyeok.jpg"
