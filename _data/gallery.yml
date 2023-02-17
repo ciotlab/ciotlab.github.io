@@ -13,8 +13,17 @@ portfolios_area:
       filter: "2021"
     - title: "2022"
       filter: "2022"
+    - title: "2023"
+      filter: "2023"
 
   portfolios:
+    - title: "Winter Graduation Ceremony 2023"
+      images: 
+       - img: "/assets/images/art/event/event_2023_Winter_Graduation_Ceremony.jpg"
+      date: "2023-02-17"
+      filters:
+       - event
+       - 2023
     - title: "Winter Conference 2023 in Yong Pyong"
       images: 
        - img: "/assets/images/art/event/event_2023_Winter_Conference.jpg"
