@@ -91,6 +91,11 @@ members_info:
         research: "Wireless Communication"
         image: "/assets/images/art/profile/profile_undergraduate_yoonjunhui.jpg"
         email: "yjh990209@g.skku.edu"
+        
+      - name: "이주원(Joo Won Lee)"
+        research: "Wireless Communication"
+        image: "/assets/images/art/profile/profile_undergraduate_leejoowon.jpg"
+        email: "joowonyeri@gmail.com" 
 
    
    - title: "Alumni"
