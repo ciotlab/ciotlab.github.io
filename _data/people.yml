@@ -62,34 +62,36 @@ members_info:
       - name: "Ghafar Ramadhan Faqih"
         research: "Bio Signal Acquisition and Processing"
         image: "/assets/images/art/profile/profile_master_ghafar.jpg"
-        email: "ghafaramadhan@gmail.com"
+        email: "ghafaramadhan@gmail.com"        
+      
+      - name: "조준희(Jun Hee Jo)"
+        research: "Bio Signal Acquisition and Processing"
+        image: "/assets/images/art/profile/profile_master_jojunhee.jpg"
+        email: "jhcho9811@naver.com"
 
-   - title: "Undergraduate"
-     members:
       - name: "박지용(Ji Yong Park)"
         research: "Radar Signal processing"
-        image: "/assets/images/art/profile/profile_undergraduate_parkjiyong.jpg"
+        image: "/assets/images/art/profile/profile_master_parkjiyong.jpg"
         email: "qkr1020@skku.edu"
-      
-      - name: "윤준희(Jun Hui Yoon)"
-        research: "Wireless Communication"
-        image: "/assets/images/art/profile/profile_undergraduate_yoonjunhui.jpg"
-        email: "yjh990209@g.skku.edu"
-      
+        
       - name: "김근호(Geun Ho Kim)"
         research: "Wireless Communication"
-        image: "/assets/images/art/profile/profile_undergraduate_kimkeunho.jpg"
+        image: "/assets/images/art/profile/profile_master_kimkeunho.jpg"
         email: "kgh30312@g.skku.edu"
 
       - name: "박수영(Su Young Park)"
         research: "Wireless Communication"
-        image: "/assets/images/art/profile/profile_undergraduate_parksuyoung.jpg"
+        image: "/assets/images/art/profile/profile_master_parksuyoung.jpg"
         email: "suyoung6918@gmail.com"
 
-      - name: "조준희(Jun Hee Jo)"
-        research: "Bio Signal Acquisition and Processing"
-        image: "/assets/images/art/profile/profile_undergraduate_jojunhee.jpg"
-        email: "jhcho9811@naver.com"
+
+   - title: "Undergraduate"
+     members:      
+      - name: "윤준희(Jun Hui Yoon)"
+        research: "Wireless Communication"
+        image: "/assets/images/art/profile/profile_undergraduate_yoonjunhui.jpg"
+        email: "yjh990209@g.skku.edu"
+
    
    - title: "Alumni"
      members:
