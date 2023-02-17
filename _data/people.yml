@@ -29,16 +29,6 @@ members_info:
 
    - title: "Master"
      members:
-      - name: "박종인(Jong In Park)"
-        research: "AI Communications"
-        image: "/assets/images/art/profile/profile_master_parkjongin.jpg"
-        email: "pj5807@naver.com"
-    
-      - name: "이상원(Sang Won Lee)"
-        research: "Radar Signal processing"
-        image: "/assets/images/art/profile/profile_master_leesangwon.jpg"
-        email: "kl0081kl@g.skku.edu"
-
       - name: "천세원(Sae Won Cheon)"
         research: "Bio Signal Acquisition and Processing"
         image: "/assets/images/art/profile/profile_master_cheonsaewon.jpg"
@@ -102,7 +92,19 @@ members_info:
         email: "jhcho9811@naver.com"
    
    - title: "Alumni"
-     members:     
+     members:
+      - name: "박종인(Jong In Park)"
+        research: "AI Communications"
+        image: "/assets/images/art/profile/profile_alumni_parkjongin.jpg"
+        email: "pj5807@naver.com"
+        education: "Master"
+    
+      - name: "이상원(Sang Won Lee)"
+        research: "Radar Signal processing"
+        image: "/assets/images/art/profile/profile_alumni_leesangwon.jpg"
+        email: "kl0081kl@g.skku.edu"
+        education: "Master"
+        
       - name: "이유진(YuJin Lee)"
         research: "Computer Vision"
         image: "/assets/images/art/profile/profile_alumni_leeyujin.jpg"
