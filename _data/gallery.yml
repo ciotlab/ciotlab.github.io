@@ -17,6 +17,13 @@ portfolios_area:
       filter: "2023"
 
   portfolios:
+    - title: "Winter Graduation Ceremony 2023"
+      images: 
+       - img: "/assets/images/art/event/event_2023_Winter_Graduation_Ceremony.jpg"
+      date: "2023-02-17"
+      filters:
+       - event
+       - 2023
     - title: "2023 1st Semester Excellent Research"
       content: "NGUYEN MINH TRAN won the Excellence Award in the 2023 first semester Sungkyunkwan University General Graduate School of Information and Communication Excellence Award."
       images:
@@ -24,13 +31,6 @@ portfolios_area:
         - img: "/assets/images/art/award/award_2023_skku_research1.jpg"
       filters:
        - award 
-       - 2023
-    - title: "Winter Graduation Ceremony 2023"
-      images: 
-       - img: "/assets/images/art/event/event_2023_Winter_Graduation_Ceremony.jpg"
-      date: "2023-02-17"
-      filters:
-       - event
        - 2023
     - title: "Winter Conference 2023 in Yong Pyong"
       images: 
