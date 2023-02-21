@@ -123,6 +123,15 @@ portfolios_area:
       filters:
        - event
        - 2019
+       
+    - title: "2023 1st Semester Excellent Research"
+      content: "NGUYEN MINH TRAN won the Excellence Award in the 2023 first semester Sungkyunkwan University General Graduate School of Information and Communication Excellence Award."
+      images:
+        - img: "/assets/images/art/award/award_2023_skku_research2.jpg"
+        - img: "/assets/images/art/award/award_2023_skku_research1.jpg"
+      filters:
+       - award 
+       - 2023
 
     - title: "IEEE ICC 2022 Demo Session"
       content: "Our CIOT team (Mi Hyun, Myeong Chan, Hyun Sik, Chaewon) have won a outstanding demo award at IEEE ICC 2022."
