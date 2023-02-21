@@ -3,6 +3,8 @@ categories:
       filter: "international"
     - title: "Domestic"
       filter: "domestic"
+    - title: "2023"
+      filter: "2023"
     - title: "2022"
       filter: "2022"
     - title: "2021"
@@ -37,6 +39,14 @@ categories:
       filter: "2004"
 
 international:
+  - title: "A Study on 3D Human Pose Estimation Using Through-Wall IR-UWB Radar and Transformer"
+    author: "Gon Woo Kim, Sang Won Lee, Ha Young Son, Kae Won Choi"
+    journal: "IEEE Access"
+    details: "Volume: 11, doi: 10.1109/ACCESS.2023.3244017"
+    link: "https://ieeexplore.ieee.org/document/10041888"
+    filters:
+     - 2023
+     - international
   - title: "Sparsity-Aware Channel Estimation for Fully Passive RIS-Based Wireless Communications: Theory to Experiments"
     author: "Muhammad Miftahul Amri, Nguyen Minh Tran, Je Hyeon Park, Dong In Kim, Kae Won Choi"
     journal: "IEEE Internet of Things Journal "
