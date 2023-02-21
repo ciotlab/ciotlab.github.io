@@ -132,7 +132,6 @@ portfolios_area:
       filters:
        - award 
        - 2023
-
     - title: "IEEE ICC 2022 Demo Session"
       content: "Our CIOT team (Mi Hyun, Myeong Chan, Hyun Sik, Chaewon) have won a outstanding demo award at IEEE ICC 2022."
       images:
