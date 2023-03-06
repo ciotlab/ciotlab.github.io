@@ -67,6 +67,27 @@ conferences:
     filters:
      - 2022
      - international
+  - title: "Sub-THz 대역 채널 모델링을 위한 레이트레이싱 시뮬레이터"
+    author: "김건우, 이상원, 최계원"
+    conference: "한국통신학회 동계종합학술대회"
+    details: "2022년도 한국통신학회 동계종합학술발표회 논문집, 409-410"
+    filters:
+     - 2022
+     - domestic       
+  - title: "레이더 신호와 머신러닝을 이용한 비가시 공간에서의 삼차원 자세 추정 연구"
+    author: "김건우, 이상원, 최계원"
+    conference: "한국통신학회 동계종합학술대회"
+    details: "2022년도 한국통신학회 동계종합학술발표회 논문집, 178-179"
+    filters:
+     - 2022
+     - domestic   
+  - title: "비가시 공간에서의 MIMO 안테나 기반 벽체 투과 레이더 신호를 이용한 물체 분류에 관한 연구"
+    author: "이상원, 최계원"
+    conference: "한국통신학회 동계종합학술대회"
+    details: "2022년도 한국통신학회 동계종합학술발표회 논문집, 1511-1512"
+    filters:
+     - 2022
+     - domestic
   - title: "Label Smoothing 위한 Motor Imagery 디코딩 연구"
     author: "Permana Deny, K. W. Choi"
     conference: "한국통신학회 동계종합학술대회"
