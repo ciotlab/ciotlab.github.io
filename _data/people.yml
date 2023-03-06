@@ -84,6 +84,16 @@ members_info:
         image: "/assets/images/art/profile/profile_master_parksuyoung.jpg"
         email: "suyoung6918@gmail.com"
 
+      - name: "김성호(Seong Ho Kim)"
+        research: "AI Communications"
+        image: "/assets/images/art/profile/profile_master_kimseongho.jpg"
+        email: "shkoma@g.skku.edu"
+
+      - name: "박건아(Geona Park)"
+        research: "AI Communications"
+        image: "/assets/images/art/profile/profile_master_parkgeona.jpg"
+        email: "geona@g.skku.edu"
+
 
    - title: "Undergraduate"
      members:      
