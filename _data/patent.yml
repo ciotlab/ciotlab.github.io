@@ -81,6 +81,17 @@ international:
      - granted
 
 domestic:
+  - title: "효율적인 빔 합성을 위한 최적화 방법 및 장치"
+    inventor: "조동근, 윤현식, 최계원"
+    authority: "대한민국"
+    patent_no: "10-2403852"
+    patent_date: "2022년 05월 26일"
+    application_no: "10-2019-0156866"
+    application_date: "2019년 11월 29일"
+    filters:
+     - 2022
+     - domestic
+     - granted
   - title: "생체 신호 분석에 기초하여 가상 세계에서 아바타의 동작을 구현하기 위한 딥러닝 모델 학습 방법 및 상기 방법을 수행하는 딥러닝 모델 학습 장치"
     inventor: "최계원, 천세원"
     authority: "대한민국"
@@ -362,15 +373,6 @@ domestic:
     authority: "대한민국"
     application_no: "10-2019-0178558"
     application_date: "2019년 12월 30일"
-    filters:
-     - 2019
-     - domestic
-     - application
-  - title: "효율적인 빔 합성을 위한 최적화 방법 및 장치"
-    inventor: "조동근, 윤현식, 최계원"
-    authority: "대한민국"
-    application_no: "10-2019-0156866"
-    application_date: "2019년 11월 29일"
     filters:
      - 2019
      - domestic
