@@ -96,6 +96,12 @@ members_info:
         research: "Wireless Communication"
         image: "/assets/images/art/profile/profile_undergraduate_leejoowon.jpg"
         email: "joowonyeri@gmail.com" 
+        
+      - name: "송여원(Yeo Won Seong)"
+        research: "Wireless Communication"
+        image: "/assets/images/art/profile/profile_undergraduate_seongyeowon.jpg"
+        email: "min1102401@g.skku.edu" 
+
 
    
    - title: "Alumni"
