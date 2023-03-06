@@ -67,6 +67,13 @@ conferences:
     filters:
      - 2022
      - international
+  - title: "연속적인 이미지를 이용한 원거리 객체 검출 연구"
+    author: "이유진, 손하영, 박재현, 최계원"
+    conference: "한국통신학회 동계종합학술대회"
+    details: "2022년도 한국통신학회 동계종합학술발표회 논문집, 1675-1676"
+    filters:
+     - 2022
+     - domestic  
   - title: "Sub-THz 대역 위상 잡음에 의한 열화 현상 모델링 및 보상 알고리즘에 따른 분석"
     author: "최주영, 윤채원, 이경인, 최계원"
     conference: "한국통신학회 동계종합학술대회"
