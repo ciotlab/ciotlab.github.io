@@ -75,12 +75,12 @@ members_info:
         email: "qkr1020@skku.edu"
         
       - name: "김근호(Geun Ho Kim)"
-        research: "Wireless Communication"
+        research: "Wireless Communications"
         image: "/assets/images/art/profile/profile_master_kimkeunho.jpg"
         email: "kgh30312@g.skku.edu"
 
       - name: "박수영(Su Young Park)"
-        research: "Wireless Communication"
+        research: "Wireless Communications"
         image: "/assets/images/art/profile/profile_master_parksuyoung.jpg"
         email: "suyoung6918@gmail.com"
 
@@ -98,17 +98,17 @@ members_info:
    - title: "Undergraduate"
      members:      
       - name: "윤준희(Jun Hui Yoon)"
-        research: "Wireless Communication"
+        research: "Wireless Communications"
         image: "/assets/images/art/profile/profile_undergraduate_yoonjunhui.jpg"
         email: "yjh990209@g.skku.edu"
         
       - name: "이주원(Joo Won Lee)"
-        research: "Wireless Communication"
+        research: "Wireless Communications"
         image: "/assets/images/art/profile/profile_undergraduate_leejoowon.jpg"
         email: "joowonyeri@gmail.com" 
         
       - name: "송여원(Yeo Won Seong)"
-        research: "Wireless Communication"
+        research: "Wireless Communications"
         image: "/assets/images/art/profile/profile_undergraduate_seongyeowon.jpg"
         email: "min1102401@g.skku.edu" 
 
@@ -141,13 +141,13 @@ members_info:
         education: "Master"
         
       - name: "장혁(Hyeok Jang)"
-        research: "Wireless Communication"
+        research: "Wireless Communications"
         image: "/assets/images/art/profile/profile_alumni_janghyeok.jpg"
         email: "hjanghyeok@naver.com"
         education: "Undergraduate"
 
       - name: "장용규(Yong kyu Jang)"
-        research: "Wireless Communication"
+        research: "Wireless Communications"
         image: "/assets/images/art/profile/profile_alumni_jangyongkyu.jpg"
         email: "fedor303@g.skku.edu"
         education: "Undergraduate"
