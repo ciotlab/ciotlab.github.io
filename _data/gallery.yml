@@ -39,6 +39,13 @@ portfolios_area:
       filters:
        - event
        - 2023
+    - title: "IEEE Comsoc Student Competition 2022"
+      content: "Our CIOT's members(Nguyen Minh Tran, Muhammad Miftahul Amri, Jehyeon Park) were awarded International Award: IEEE Comsoc Student Competition 2022, Honorary mention (Among the top 14 worldwide) on 17 November 2022."
+      images:
+        - img: "/assets/images/art/award/award_2022_IEEE_Comsoc.jpg"
+      filters:
+       - award 
+       - 2022   
     - title: "Summer Graduation Ceremony 2022"
       images: 
        - img: "/assets/images/art/event/event_2022_Summer_Graduation_Ceremony.jpg"
