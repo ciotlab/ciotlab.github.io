@@ -111,8 +111,11 @@ members_info:
         research: "Wireless Communications"
         image: "/assets/images/art/profile/profile_undergraduate_seongyeowon.jpg"
         email: "min1102401@g.skku.edu" 
-
-
+        
+      - name: "조성우(Sung Woo Cho)"
+        research: "Wireless Communications"
+        image: "/assets/images/art/profile/profile_undergraduate_sungwoocho.jpg"
+        email: "luckycho@g.skku.edu" 
    
    - title: "Alumni"
      members:
