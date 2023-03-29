@@ -3,6 +3,8 @@ categories:
       filter: "international"
     - title: "Domestic"
       filter: "domestic"
+    - title: "2023"
+      filter: "2023"
     - title: "2022"
       filter: "2022"
     - title: "2021"
@@ -35,6 +37,34 @@ categories:
       filter: "2003"
 
 conferences:
+  - title: "A Study on Graph Transformer-based Network for Brain-Computer Interface"
+    author: "Permana Deny, Kae Won Choi"
+    conference: "한국통신학회 동계종합학술대회"
+    details: "2023년도 한국통신학회 동계종합학술발표회 논문집, 469-470"
+    filters:
+     - 2023
+     - domestic 
+  - title: "AFC기반 다중 스펙트럼 채널 접근을 위한 강화학습 알고리즘 비교"
+    author: "채준병, 박종인, 최계원"
+    conference: "한국통신학회 동계종합학술대회"
+    details: "2023년도 한국통신학회 동계종합학술발표회 논문집, 1428-1429"
+    filters:
+     - 2023
+     - domestic 
+  - title: "잠재 공간에서 Belief State를 이용해 미래 상태를 예측하는 모델 기반 강화학습에 관한 연구"
+    author: "권세이, 최계원"
+    conference: "한국통신학회 동계종합학술대회"
+    details: "2023년도 한국통신학회 동계종합학술발표회 논문집, 1374-1375"
+    filters:
+     - 2023
+     - domestic 
+  - title: "SPRT를 이용한 MI 분류 모델의 정확도에 관한 연구"
+    author: "조준희, 최계원"
+    conference: "한국통신학회 동계종합학술대회"
+    details: "2023년도 한국통신학회 동계종합학술발표회 논문집, 1049-1050"
+    filters:
+     - 2023
+     - domestic 
   - title: "Model-Based Reinforcement Learning for Wireless Channel Access"
     author: "Jong In Park, Kae Won Choi"
     conference: "2022 13th International Conference on Information and Communication Technology Convergence (ICTC)"
