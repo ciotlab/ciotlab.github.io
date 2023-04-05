@@ -116,7 +116,12 @@ members_info:
         research: "Wireless Communications"
         image: "/assets/images/art/profile/profile_undergraduate_sungwoocho.jpg"
         email: "luckycho@g.skku.edu" 
-   
+        
+      - name: "최윤정(Jeong Yoon Choi)"
+        research: "Bio Signal Acquisition and Processing"
+        image: "/assets/images/art/profile/profile_undergraduate_yoonjungchoi.jpg"
+        email: "qrs998@g.skku.edu" 
+        
    - title: "Alumni"
      members:
       - name: "박종인(Jong In Park)"
