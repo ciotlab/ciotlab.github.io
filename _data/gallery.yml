@@ -17,6 +17,14 @@ portfolios_area:
       filter: "2023"
 
   portfolios:
+    - title: "Homecoming Day 2023"
+      content: "We held Homecoming Day in our laboratory with our lab colleagues, school researchers, and professors from the past."
+      images: 
+       - img: "/assets/images/art/event/home_23.jpg"
+      date: "2023-06-09"
+      filters:
+       - event
+       - 2023
     - title: "Winter Graduation Ceremony 2023"
       images: 
        - img: "/assets/images/art/event/event_2023_Winter_Graduation_Ceremony.jpg"
